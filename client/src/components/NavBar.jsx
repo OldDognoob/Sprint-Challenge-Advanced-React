@@ -1,23 +1,17 @@
-import React, {useState} from 'react';
-import {useDarkMode} from'../hooks/useDarkMode';
+import React from 'react';
+import useDarkMode from '../hooks/useDarkMode';
 
-export default function Navbar(props){
-    const[darkMode, setDarkMode]=useDarkMode();
+export default function Navbar() {
+    const [darkMode, setDarkMode] = useDarkMode();
 
-    const toggleMode = event =>{
+    const toggleDarkMode = event =>{
         event.preventDefault();
         setDarkMode(!darkMode);
-    };
+    }
 
     return (
-        <div className="target">
-            <nav>
-                <button 
-                className={darkMode ? 'toggle toggled' : 'toggle'} 
-                onClick={toggleMode}>
-                    Dark Mode
-                    </button>
-            </nav>
+        <div className="navbar">
+            <button className={darkMode ? 'toggle toggled' : 'toggle'}onClick ={toggleDarkMode}>Toggle Dark Mode</button>
         </div>
-    );
+    )
 }
