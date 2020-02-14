@@ -31,3 +31,25 @@
     transform: rotate(360deg);
   }
 }
+.card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(137, 144, 146);
+  border-radius: 10px;
+  border: 3px solid rgb(187, 191, 194);
+  box-shadow: 0px 5px 15px 1px black;
+}
+.darkMode {
+  background-color: rgb(43, 43, 43);
+}
+.toggle {
+  color: black;
+  cursor: pointer;
+}
+.toggled {
+  color: rgb(189, 189, 189);
+  background-color: black;
+  border-color: rgb(41, 41, 41);
+}
