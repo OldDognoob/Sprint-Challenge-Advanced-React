@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <h1>List of players</h1>
+      <Navbar />
+      <Display/>
     </div>
   );
 }
