@@ -16,5 +16,9 @@ describe('App', () => {
     // 3- assert thing in DOM
     expect(element).toBeInTheDocument();
   })
-
+    it('renders a header', () =>{
+      const wrapper = rtl.render(<App/>);
+      const element=wrapper.getByText(/Players/i);
+      expect(element).toBeTruthy()
+    })
 })
