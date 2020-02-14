@@ -25,6 +25,7 @@ export default class Display extends Component{
             });
         }
         render() {
+          
           return this.state.players.map(player => {
             return <Card player={player} key={player.id} />;
           });
